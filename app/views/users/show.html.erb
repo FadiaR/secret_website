@@ -1,0 +1,14 @@
+<div class="container">
+<% user = current_user %>
+<h1>
+  Your email is <%= user.email %>
+</h1>
+<ul class="btn btn center-block">
+  <li class="btn btn-success">
+    <%= link_to 'Update user', edit_user_path %>
+  </li>
+  <li class="btn btn-danger">
+    <%= link_to 'Delete user', user_path, method: :delete %>
+  </li>
+</ul>
+</div>
